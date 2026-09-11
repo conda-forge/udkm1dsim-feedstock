@@ -11,13 +11,13 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - hatchling
   run:
     - python >={{ python_min }}
     - tqdm >=4.43.0
