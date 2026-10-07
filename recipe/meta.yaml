@@ -1,4 +1,4 @@
-{% set version = "2.4.1" %}
+{% set version = "2.4.2" %}
 
 package:
   name: udkm1dsim
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/u/udkm1Dsim/udkm1dsim-{{ version }}.tar.gz
-  sha256: c7ec49982b8596643b2d537374e3c77cb481ea21b91b5bbf485cdba514ff7997
+  sha256: 4a693491084e968ad083213095e8ff9016efcdbb7f14551e345b5e9badfc7d8d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
